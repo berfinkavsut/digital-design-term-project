@@ -1,0 +1,722 @@
+
+*** Running vivado
+    with args -log servo_control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source servo_control.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source servo_control.tcl -notrace
+Command: synth_design -top servo_control -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11348 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 358.922 ; gain = 99.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'servo_control' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:15]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_1' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:13]
+INFO: [Synth 8-3491] module 'clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:4' bound to instance 'clk180kHz_map' of component 'clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clk180kHz' (1#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:11]
+INFO: [Synth 8-3491] module 'servo_pwm' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:5' bound to instance 'servo_pwm_map' of component 'servo_pwm' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm' (2#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm_clk180kHz' (3#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:13]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_2' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:172]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_3' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:173]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_4' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'servo_control' (4#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 414.129 ; gain = 154.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 414.129 ; gain = 154.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 414.129 ; gain = 154.402
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/servo_control_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/servo_control_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 748.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 748.566 ; gain = 488.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 748.566 ; gain = 488.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 748.566 ; gain = 488.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "temporal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:139]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:103]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:103]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:66]
+INFO: [Synth 8-5546] ROM "counter1_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos1_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter2_up" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos2_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter3_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos4_int" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 748.566 ; gain = 488.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Servo_control_2' (servo_pwm_clk180kHz) to 'Servo_control_3'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 2     
+	   2 Input     21 Bit       Adders := 4     
+	   2 Input     13 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               22 Bit    Registers := 2     
+	               21 Bit    Registers := 4     
+	               13 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 4     
+	   2 Input     21 Bit        Muxes := 8     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module servo_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 2     
+	   2 Input     21 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               22 Bit    Registers := 2     
+	               21 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 4     
+	   2 Input     21 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 21    
+Module clk180kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module servo_pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Servo_control_1/clk180kHz_map/temporal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Servo_control_2/clk180kHz_map/temporal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Servo_control_4/clk180kHz_map/temporal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos4_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter3_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos2_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter2_up" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos1_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter1_left" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 748.566 ; gain = 488.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 748.566 ; gain = 488.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 778.723 ; gain = 518.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 787.488 ; gain = 527.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 787.488 ; gain = 527.762
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 787.488 ; gain = 527.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 787.488 ; gain = 527.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 787.488 ; gain = 527.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 787.488 ; gain = 527.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 787.488 ; gain = 527.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    53|
+|3     |LUT1   |    12|
+|4     |LUT2   |    66|
+|5     |LUT3   |   143|
+|6     |LUT4   |    72|
+|7     |LUT5   |    49|
+|8     |LUT6   |    35|
+|9     |FDCE   |   221|
+|10    |IBUF   |     8|
+|11    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------------------+------+
+|      |Instance          |Module                |Cells |
++------+------------------+----------------------+------+
+|1     |top               |                      |   664|
+|2     |  Servo_control_1 |servo_pwm_clk180kHz   |    71|
+|3     |    clk180kHz_map |clk180kHz_4           |    23|
+|4     |    servo_pwm_map |servo_pwm_5           |    48|
+|5     |  Servo_control_2 |servo_pwm_clk180kHz_0 |    71|
+|6     |    clk180kHz_map |clk180kHz_2           |    23|
+|7     |    servo_pwm_map |servo_pwm_3           |    48|
+|8     |  Servo_control_4 |servo_pwm_clk180kHz_1 |    71|
+|9     |    clk180kHz_map |clk180kHz             |    23|
+|10    |    servo_pwm_map |servo_pwm             |    48|
++------+------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 787.488 ; gain = 527.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 787.488 ; gain = 193.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 787.488 ; gain = 527.762
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 787.488 ; gain = 540.465
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.runs/synth_1/servo_control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file servo_control_utilization_synth.rpt -pb servo_control_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 787.488 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 24 21:15:20 2018...
+
+*** Running vivado
+    with args -log servo_control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source servo_control.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source servo_control.tcl -notrace
+Command: synth_design -top servo_control -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7816 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 359.262 ; gain = 99.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'servo_control' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:15]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_1' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:13]
+INFO: [Synth 8-3491] module 'clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:4' bound to instance 'clk180kHz_map' of component 'clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clk180kHz' (1#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:11]
+INFO: [Synth 8-3491] module 'servo_pwm' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:5' bound to instance 'servo_pwm_map' of component 'servo_pwm' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm' (2#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm_clk180kHz' (3#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:13]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_2' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:172]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_3' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:173]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_4' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'servo_control' (4#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 414.301 ; gain = 154.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 414.301 ; gain = 154.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 414.301 ; gain = 154.156
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/servo_control_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/servo_control_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 748.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 748.074 ; gain = 487.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 748.074 ; gain = 487.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 748.074 ; gain = 487.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "temporal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:139]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:103]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:103]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:66]
+INFO: [Synth 8-5546] ROM "counter1_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos1_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter2_up" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos2_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter3_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos4_int" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 748.074 ; gain = 487.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Servo_control_2' (servo_pwm_clk180kHz) to 'Servo_control_3'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 4     
+	   2 Input     13 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               19 Bit    Registers := 4     
+	               18 Bit    Registers := 2     
+	               13 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 4     
+	   2 Input     18 Bit        Muxes := 8     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module servo_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               19 Bit    Registers := 4     
+	               18 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 4     
+	   2 Input     18 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 21    
+Module clk180kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module servo_pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Servo_control_1/clk180kHz_map/temporal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Servo_control_2/clk180kHz_map/temporal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Servo_control_4/clk180kHz_map/temporal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos4_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter3_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos2_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter2_up" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pos1_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter1_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\counter3_left_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\counter3_right_reg[18] )
+WARNING: [Synth 8-3332] Sequential element (counter3_right_reg[18]) is unused and will be removed from module servo_control.
+WARNING: [Synth 8-3332] Sequential element (counter3_left_reg[18]) is unused and will be removed from module servo_control.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 748.074 ; gain = 487.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 748.074 ; gain = 487.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 769.191 ; gain = 509.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 777.215 ; gain = 517.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 777.215 ; gain = 517.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 777.215 ; gain = 517.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 777.215 ; gain = 517.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 777.215 ; gain = 517.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 777.215 ; gain = 517.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 777.215 ; gain = 517.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    51|
+|3     |LUT1   |     9|
+|4     |LUT2   |    69|
+|5     |LUT3   |   121|
+|6     |LUT4   |    79|
+|7     |LUT5   |    19|
+|8     |LUT6   |    46|
+|9     |FDCE   |   203|
+|10    |IBUF   |     8|
+|11    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------------------+------+
+|      |Instance          |Module                |Cells |
++------+------------------+----------------------+------+
+|1     |top               |                      |   610|
+|2     |  Servo_control_1 |servo_pwm_clk180kHz   |    72|
+|3     |    clk180kHz_map |clk180kHz_4           |    24|
+|4     |    servo_pwm_map |servo_pwm_5           |    48|
+|5     |  Servo_control_2 |servo_pwm_clk180kHz_0 |    72|
+|6     |    clk180kHz_map |clk180kHz_2           |    24|
+|7     |    servo_pwm_map |servo_pwm_3           |    48|
+|8     |  Servo_control_4 |servo_pwm_clk180kHz_1 |    72|
+|9     |    clk180kHz_map |clk180kHz             |    24|
+|10    |    servo_pwm_map |servo_pwm             |    48|
++------+------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 777.215 ; gain = 517.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 777.215 ; gain = 183.297
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 777.215 ; gain = 517.070
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 777.215 ; gain = 530.020
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.runs/synth_1/servo_control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file servo_control_utilization_synth.rpt -pb servo_control_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 777.215 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 29 16:51:16 2018...

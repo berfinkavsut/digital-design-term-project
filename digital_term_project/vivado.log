@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec 29 16:45:57 2018
+# Process ID: 8624
+# Current directory: D:/DERS/ee102/Term Project/Final Phase/digital_term_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7608 D:\DERS\ee102\Term Project\Final Phase\digital_term_project\digital_term_project.xpr
+# Log file: D:/DERS/ee102/Term Project/Final Phase/digital_term_project/vivado.log
+# Journal file: D:/DERS/ee102/Term Project/Final Phase/digital_term_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 733.230 ; gain = 62.469
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: servo_control
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 854.957 ; gain = 108.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'servo_control' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:15]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_1' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:13]
+INFO: [Synth 8-3491] module 'clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:4' bound to instance 'clk180kHz_map' of component 'clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clk180kHz' (1#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/clk180kHz.vhd:11]
+INFO: [Synth 8-3491] module 'servo_pwm' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:5' bound to instance 'servo_pwm_map' of component 'servo_pwm' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm' (2#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm_clk180kHz' (3#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:13]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_2' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:172]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_3' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:173]
+INFO: [Synth 8-3491] module 'servo_pwm_clk180kHz' declared at 'D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_pwm_clk180kHz.vhd:4' bound to instance 'Servo_control_4' of component 'servo_pwm_clk180kHz' [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'servo_control' (4#1) [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/sources_1/new/servo_control.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 898.602 ; gain = 152.313
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 898.602 ; gain = 152.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 898.602 ; gain = 152.313
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [D:/DERS/ee102/Term Project/Final Phase/digital_term_project/digital_term_project.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1236.746 ; gain = 490.457
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1236.746 ; gain = 490.457
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 29 17:28:30 2018...
